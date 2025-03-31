@@ -233,7 +233,8 @@
         
         document.getElementById("restartButton").addEventListener("click", () => {
             gameActive = true; // Játék újraindítása
-            score = 0; // Pontszám resetelése document.getElementById("score").innerText = `Pontszám: ${score}`; // Pontszám frissítése
+            score = 0; // Pontszám resetelése
+            document.getElementById("score").innerText = `Pontszám: ${score}`; // Pontszám frissítése
             document.getElementById("gameOver").classList.add("hidden");
             document.getElementById("restartButton").classList.add("hidden");
             arena.forEach(row => row.fill(0)); // Játékterület resetelése
