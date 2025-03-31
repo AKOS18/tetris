@@ -195,8 +195,8 @@
                 }
             }
             if (rowCount > 0) {
-                score += rowCount * 100; // Pontszám növelése
-                document.getElementById("score").innerText = `Pontszám: ${score}`; // Pontszám frissítése
+                score += rowCount * 100; 
+                document.getElementById("score").innerText = `Pontszám: ${score}`; 
             }
         }
         
@@ -221,8 +221,8 @@
         
         document.getElementById("startButton").addEventListener("click", () => {
             gameActive = true;
-            score = 0; // Pontszám resetelése
-            document.getElementById("score").innerText = `Pontszám: ${score}`; // Pontszám frissítése
+            score = 0; 
+            document.getElementById("score").innerText = `Pontszám: ${score}`;
             document.getElementById("startButton").classList.add("hidden");
             document.getElementById("gameOver").classList.add("hidden");
             document.getElementById("restartButton").classList.add("hidden");
